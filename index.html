@@ -245,8 +245,8 @@ const submissions = {
     "abstract": "Understanding stochastic inflation, and in particular how to compute controlled corrections, remains an important open problem. In this talk, we study this problem using an effective field theory description of light fields in de Sitter space. Starting from a coarse-grained description, we derive an effective theory for the infrared dynamics of long-wavelength modes. As the coarse-graining scale is pushed below the Hubble scale, the dynamics becomes dominated by stochastic fluctuations and diffusion, reproducing stochastic inflation at leading order while allowing systematic corrections to be computed. We then analyse the renormalisation-group flow of the reduced density matrix under changes of the coarse-graining scale. In the infrared limit, the flow approaches a local stochastic regime described by a generalised Fokker–Planck equation. These results provide a unified framework for understanding stochastic inflation as the infrared limit of an effective field theory in de Sitter space."
   },
   "Raúl Rojas": {
-    "title": "Black hole thermodynamics from scalar fields: Effective cosmological constant and pressure",
-    "abstract": "We present exact black hole solutions coupled to a scalar field with a non-trivial potential, in which the scalar field approaches a constant value at infinity. This asymptotic value induces an effective cosmological constant, allowing these solutions to be reinterpreted as spacetimes with emergent asymptotic curvature. Within this framework, we propose an interpretation in which the asymptotic value of the scalar acts as an effective environmental parameter of the black hole, inducing a pressure analogous to that considered in the standard extended black hole thermodynamics. This approach enables the exploration of a scalar-driven extension of black hole chemistry, including the analysis of the first law, stability, and possible phase transitions."
+    "title": "Black hole thermodynamics from virtual geometries: Scalar fields and criticality",
+    "abstract": "We present exact charged black hole solutions coupled to a self-interacting scalar field and use them to explore a new formulation of black hole thermodynamics based on virtual geometries. These geometries extend the gravitational configuration space beyond solutions of the Einstein equations, while preserving the relevant boundary and horizon structure. By evaluating the Euclidean action on this enlarged space, we construct a virtual thermodynamic potential whose stationary points recover the physical black hole configurations. This framework provides a geometric description of equilibrium, stability, and critical phenomena without requiring the virtual configurations themselves to satisfy the field equations."
   },
   "Gabriel Leon": {
     "title": "Emergence of Cosmic Structure from Planckian Discreteness",
@@ -311,7 +311,15 @@ const submissions = {
   "Nahuel Mirón-Granese": {
     "title": "The Early Universe Seen Through Gravitational Waves",
     "abstract": "Gravitational waves offer a new way of observing the Universe when light is no longer enough, opening a unique window onto epochs and physical processes beyond the reach of electromagnetic observations. In this talk, I will illustrate this potential through examples of how gravitational waves can be used to probe cosmology, the early Universe, and fundamental physics. I will discuss primordial gravitational waves and the information encoded in their imprint on the cosmic microwave background, as well as the production of stochastic gravitational-wave backgrounds during the highly nonlinear dynamics of reheating, explored through lattice simulations. Together, these examples highlight the potential of gravitational waves as cosmic messengers, offering new insights into cosmic history and fundamental physics."
-  }
+  },
+  "Guilherme Brando": {
+    "title": "Beyond LCDM in the Nonlinear Universe",
+    "abstract": "Upcoming large-scale structure surveys will probe cosmology deep into the nonlinear regime, where modified gravity, baryonic feedback, and galaxy bias become intertwined. I will discuss approaches to modeling nonlinear structure formation beyondLCDM, from perturbation theory and N-body simulations to hybrid effective field theory. I will highlight the challenges of separating new gravitational physics from astrophysical and galaxy-formation effects, and the prospects for extracting robust cosmological information from nonlinear scales."
+  },
+  "Raissa Mendes": {
+    "title": "Fundamental physics with neutron stars",
+    "abstract": ""
+  } 
 };
 const talk=(speaker)=>({speaker,...(submissions[speaker]||{title:"",abstract:""})});
 const pair=(time,a,b)=>({time,a:a?talk(a):null,b:b?talk(b):null});
